@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_Javascript</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <p id="new">HELLO_WORLD1</p>
+        <h1 id="loop"></h1>
+        <p class="new" id="change">HELLO_WORLD2</p>
+        <p class="new">HELLO_WORLD3</p>
+        <p class="new">HELLO_WORLD4</p>
+        <p class="new">HELLO_WORLD5</p>
+    </div>
+
+    <button id="btn" onclick="clicks()">click hear</button>
+
+</body>
+<script>
+    function clicks() {
+        var l = document.getElementById("loop");
+        var conter = 0;
+        for (var i = 0; i < 10; i++) {
+            counter += i;
+        }
+        l.innerText = counter;
+    }
+
+
+
+
+    function clicksa() {
+        var b = document.getElementById("change");
+        b.innerHTML = "<h1>good morning</h1>";
+        b.style.backgroundColor = "blue";
+    }
+
+    function clicksb() {
+        var b = document.getElementById("change");
+        b.innerHTML = "<h1>good morning</h1>";
+        b.style.backgroundColor = "pink";
+    }
+
+    function clicksc() {
+        var b = document.getElementById("change");
+        b.innerHTML = "<h1>good morning</h1>";
+        b.style.backgroundColor = "indigo";
+    }
+    // setTimeout(clicksc, 2000);
+
+    // for (var a = 0; a < 10; a++) {
+    //     console.log(a)
+    // }
+
+    // while (a < 10) {
+    //     document.write(a + "<br>");
+    //     a++;
+    // }
+
+    // console.log("hello world")
+    // document.write("good morning")
+
+    // var a = document.getElementById("new")
+    // a.innerHTML = "<h1>HELLO DEEP</h1>"
+    // a.style.color = "green";
+
+    // function clicks() {
+    //     var b = document.getElementById("change");
+    //     b.innerHTML = "<h1>good morning</h1>";
+    //     b.style.backgroundColor = "green";
+    // }
+    // do {
+    //     document.write(a + 1)
+    //     a++;
+    // } while (a < 20)
+</script>
+
+</html>
