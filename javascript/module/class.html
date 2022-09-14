@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class person{
+
+        //     constructor(n,a){
+        //         this.name = n;
+        //         this.age = a;
+        //     }
+        //     hi(){
+
+        //         console.log("hi")
+        //     }
+        //     static hello(){
+        //         console.log("hello")
+        //     }
+        // }
+
+        // person1  = new person("Deep",23);
+        // console.log(person1);  
+        // // console.log(person1.hi()) 
+        // // console.log(person.hello())
+        // person.hello();
+
+        //================= inheritance class =================//
+
+    //  class emp{
+        
+    //      constructor(n){
+    //         //  console.log("emp class called")
+    //         this.name = n;
+
+    //      }
+    //      hi(){
+    //          console.log("say hii.....")
+    //      }
+    //       hello(){
+    //          console.log("say hello......")
+    //      }
+    //  }
+
+    //  class manager extends emp{
+
+    //     constructor(n,d){
+    //         super(n);
+
+    //         this.department = d;
+    //     }
+    //     info(){
+    //         super.hi();
+    //         console.log(this.name+this.department)
+    //     }
+
+    //  }
+
+    //  employee1 = new manager("deep")
+    //  console.log(employee1)
+
+    //   employee1 = new manager("Deep","web");
+    // //   console.log(employee1.hello());
+    // //   console.log(employee1)
+    //   console.log(employee1.info())
+
+// class emp{
+//     #name = " ";
+    
+//     constructor(n){
+//         this.#name = n;
+//     }
+//    #name1(){
+//         console.log(this.#name)
+//    }
+  
+//    hello(){
+//        this.#name1();
+//    }
+// }
+
+// employee = new emp("deep")
+// console.log(employee.hello())
+
+let use = {
+    sayhi(){
+        console.log("hiii")
+    },
+    sayby(){
+        console.log("by....")
+    }
+}
+
+class emp{
+ constructor(){
+     this. name = "deep";
+ }
+}
+Object.assign(emp.prototype, use);
+
+ employee = new emp();
+
+ console.log(employee.sayhi());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

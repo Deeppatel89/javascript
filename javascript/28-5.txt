@@ -1,0 +1,6 @@
+function without parameter
+function anonymous
+function return value
+firstElementChild
+lastelementchild
+invoked function

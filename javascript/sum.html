@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+
+
+// function without parameter
+   function add(){
+       
+//   let sum = a+b;
+//   console.log(sum)
+
+
+          if(arguments.length == 0){
+             console.log( "no perameter passed");
+          }else{
+             sum = 0;
+            for(let i=0; i<arguments.length;i++){
+                sum = sum+arguments[i];
+
+            }
+            console.log(sum);
+          }
+
+
+   }
+
+   add(5,78,500)
+
+   // function return value
+
+   function max(a,b){
+   var x =   document.write (a+b);
+    return x;
+
+   }
+   max(1,5);
+
+//function anonymous
+   var abc = function(){
+       
+       console.log("hello world");
+
+   }
+
+   abc();
+   //invoked function
+  ( function(){
+       console.log("hello world! hello")
+   })();
+
+</script>
+</html>

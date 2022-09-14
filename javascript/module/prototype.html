@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function Creature(ls){
+          this.lifespan = ls;
+
+      }
+     Creature.prototype.breath = function(){
+         console.log("breathing....")
+     }
+
+
+      function Person(fname,lname,a){
+          this.Firstname = fname;
+          this.Lastname = lname;
+          this.Age = a;
+        //   this.fullname = function(){
+        //       console.log(this.Firstname+" "+this.Lastname)
+        //   }
+      }
+      Person.prototype.fullname = function(){
+        console.log(this.Firstname+" "+this.Lastname);
+      }
+      Person.prototype.__proto__ = Object.create(Creature.prototype)
+
+
+      person1 = new Person("Deep","Patel",23);
+    //   console.log(person1.breath())
+      creature1 = new Creature(100);
+      console.log(creature1);
+
+    </script>
+</body>
+</html>

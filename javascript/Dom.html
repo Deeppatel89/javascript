@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul id="add">
+        <li>first</li>
+        <li>secound</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ul>
+</body>
+<script>
+    var first = document.getElementById("add");
+    var secound = first.firstElementChild;
+    secound.id = "addkiya";
+    secound.innerHTML = "no first";
+    var last = first.lastElementChild;
+    last.innerHTML = "last";
+    var two = secound.nextElementSibling;
+    two.innerHTML = "a mene change kiya";
+    var three = two.nextElementSibling;
+    three.innerHTML = "deep peep";
+
+
+    var create = createElement('<h1>');
+    var text = createTextNode('hello hii how are you');
+    first.appendChild(create,text,last);   
+
+</script>
+
+</html>
